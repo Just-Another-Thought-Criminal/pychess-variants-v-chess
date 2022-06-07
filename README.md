@@ -3,7 +3,17 @@
 [![Python-CI](https://github.com/gbtami/pychess-variants/actions/workflows/ci.yml/badge.svg)](https://github.com/gbtami/pychess-variants/actions/workflows/ci.yml)
 [![Nodejs-CI](https://github.com/gbtami/pychess-variants/actions/workflows/nodejs.yml/badge.svg)](https://github.com/gbtami/pychess-variants/actions/workflows/nodejs.yml)
 
-pychess-variants is a free, open-source chess server designed to play chess variants.
+pychess-variants is a free, open-source chess server designed to play chess variants. I would like to code my variant of chess and submit it as a
+supported variant on pychess. others are welcome to help.
+
+v-chess is an expansion of crazyhouse, capahouse, s-house, and grandhouse, and placement chess. there are some new pieces we are going to add: just as the chancellor is a combination of rook and knight, and the archbishop is a combination of bishop and knight, we can combine the pawn with the knight, the bishop, the rook, or the king or queen; and we can combine the knight with the king, and the knight again (knight squared).
+the mounted pawn moves like a pawn but can also leap forward only.
+the pawn-bishop combination is a cleric and can move on the diagonal without attacking, and otherwise moves like a pawn
+the pawn-rook combination is a guard and can move and attack sideways but not move backwards, and otherwise moves like a pawn
+the mounted king can move like a king and like a knight, and is able to leap over a rank or file where he otherwise would be in check; provided the square he moves to is not threatened. this only applies when he moves like a knight, i.e. the king cannot move into check as one might expect.
+the pawn crosses with the queen is the princess and can move 2 squares in any direction; and the pawn crossed with the king is the prince and moves like a king. the knight-knight is the knightrider and can move like a knight successively any single direction as many times as he wants on unobstructed ground, he may leap like a knight once at the beginning of the movement.
+the idea here is that the king is more difficult to mate because of his mount; the extra space on a grandhouse board can be filled with these additional major and minor pieces; the cleric and guard work with the knights, bishop, and pawns to provide troops for the army; the major pieces represent special formations for offense or defense; and the prince and princess help to create a bodyguard for the king.
+in terms of incorporating placement chess, it would be nice to start with the option of having some pieces in the pocket indefinitely rather than on the board.
 
 Currently supported games are:
 
